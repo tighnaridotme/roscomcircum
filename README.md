@@ -21,7 +21,7 @@ v2rayN - клиент прокси для Windows, поддерживающий 
 <details> <summary>Наглядно</summary> <img src="assets/zh2en.png" alt="drawing" width="555" height="434"/> </details>
 <p>Закрываем окно приложения, закрываем его в трее, нажав на самую нижнюю кнопку в появившейся над иконкой в трее всплывашке. Запускаем заново - язык должен смениться на английский.</p>
 
-<li>Во вкладке <tt>Settings - Option Setting</tt> <sup>оцените качество английского и представьте, что там будет на русском</sup> можете изменить приглянувшиеся вам настройки.</li> 
+<li>Во вкладке <tt>Settings - Option Setting</tt> <sup>оцените качество английского и представьте, что там будет на русском</sup> можете изменить приглянувшиеся вам настройки.</li>
 <p>Если не знаете - не трогайте (c). Обязательно ставим <tt>Check for pre-release updates</tt>. Проект sing-box очень активно развивается, поэтому нам нужны все последние багфиксы. Там же можно отключить <tt>Ignore Geo files when updating core</tt>. Если нужно - поставим <tt>Start on boot</tt> во вкладке <tt>v2rayN settings</tt>. В <tt>CoreType settings</tt> для VLESS выберем <tt>sing-box</tt>. Пока не забыли - обновим ядро (<tt>Check Update - Sing-box Core</tt> на главном экране клиента).</p>
 
 <li>Добавляем наш сервер VLESS, нажав на соответствующую кнопку слева сверху.</li>
@@ -58,7 +58,7 @@ v2rayN - клиент прокси для Windows, поддерживающий 
       "geosite:mailru",
       "domain:.ru",
       "domain:.xn--p1ai",
-      "domain:.su",
+      "domain:.su"
     ]
   }
 ]
@@ -122,7 +122,7 @@ v2rayN - клиент прокси для Windows, поддерживающий 
     {
       "domain_suffix": [
         ".ru",
-		".xn--p1ai",
+        ".xn--p1ai",
         ".su"
       ],
       "rule_set": [
