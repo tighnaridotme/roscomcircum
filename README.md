@@ -56,9 +56,9 @@ v2rayN - клиент прокси для Windows, поддерживающий 
       "geosite:category-gov-ru",
       "geosite:yandex",
       "geosite:mailru",
-      "domain:.ru",
-      "domain:.xn--p1ai",
-      "domain:.su"
+      "domain:ru",
+      "domain:xn--p1ai",
+      "domain:su"
     ]
   }
 ]
