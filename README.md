@@ -53,9 +53,11 @@ v2rayN - клиент прокси для Windows, поддерживающий 
     ],
     "domain": [
       "geosite:private",
+      "geosite:category-ru",
       "geosite:category-gov-ru",
       "geosite:yandex",
       "geosite:mailru",
+      "geosite:vk",
       "domain:ru",
       "domain:xn--p1ai",
       "domain:su"
@@ -126,9 +128,11 @@ v2rayN - клиент прокси для Windows, поддерживающий 
         ".su"
       ],
       "rule_set": [
+        "geosite-category-ru",
         "geosite-category-gov-ru",
         "geosite-yandex",
-        "geosite-mailru"
+        "geosite-mailru",
+        "geosite-vk"
       ],
       "server": "local"
     },

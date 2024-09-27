@@ -14,10 +14,6 @@
         "tag": "local",
         "address": "https://77.88.8.8/dns-query",
         "detour": "direct"
-      },
-      {
-        "tag": "block",
-        "address": "rcode://success"
       }
     ],
     "rules": [
@@ -28,15 +24,13 @@
           ".su"
         ],
         "rule_set": [
+          "geosite-category-ru",
           "geosite-category-gov-ru",
           "geosite-yandex",
-          "geosite-mailru"
+          "geosite-mailru",
+          "geosite-vk"
         ],
         "server": "local"
-      },
-      {
-        "rule_set": "geosite-category-ads-all",
-        "server": "block"
       }
     ],
     "final": "remote"
@@ -99,9 +93,11 @@
         ],
         "rule_set": [
           "geosite-private",
+          "geosite-category-ru",
           "geosite-category-gov-ru",
           "geosite-yandex",
-          "geosite-mailru"
+          "geosite-mailru",
+          "geosite-vk"
         ],
         "outbound": "direct"
       },
@@ -138,15 +134,21 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-vk",
+        "format": "binary",
+        "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-vk.srs"
+      },
+      {
+        "type": "remote",
         "tag": "geoip-ru",
         "format": "binary",
         "url": "https://github.com/SagerNet/sing-geoip/raw/rule-set/geoip-ru.srs"
       },
       {
         "type": "remote",
-        "tag": "geosite-category-ads-all",
+        "tag": "geosite-category-ru",
         "format": "binary",
-        "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-category-ads-all.srs"
+        "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-category-ru.srs"
       }
     ],
     "auto_detect_interface": true

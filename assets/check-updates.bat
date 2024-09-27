@@ -44,6 +44,9 @@ if not exist %VERSION_FILE% (
 set /p CURRENT_VERSION=<%VERSION_FILE%
 
 :: Create temp directory
+if exist "%TEMP_DIR%" (
+    rmdir /s /q "%TEMP_DIR%"
+)
 mkdir "%TEMP_DIR%"
 
 :: Get all releases info from GitHub (including pre-releases)
