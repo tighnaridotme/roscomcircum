@@ -105,38 +105,38 @@ v2rayN - клиент прокси для Windows, поддерживающий 
 
 ```json
 {
-  "servers": [
-    {
-      "tag": "remote",
-      "address": "https://1.1.1.1/dns-query",
-      "strategy": "ipv4_only",
-      "detour": "proxy"
-    },
-    {
-      "tag": "local",
-      "address": "https://77.88.8.8/dns-query",
-      "strategy": "ipv4_only",
-      "detour": "direct"
-    },
-  ],
-  "rules": [
-    {
-      "domain_suffix": [
-        ".ru",
-        ".xn--p1ai",
-        ".su"
-      ],
-      "rule_set": [
-        "geosite-category-ru",
-        "geosite-category-gov-ru",
-        "geosite-yandex",
-        "geosite-mailru",
-        "geosite-vk"
-      ],
-      "server": "local"
-    },
-  ],
-  "final": "remote"
+    "servers": [
+        {
+            "tag": "remote",
+            "address": "https://1.1.1.1/dns-query",
+            "strategy": "ipv4_only",
+            "detour": "proxy"
+        },
+        {
+            "tag": "local",
+            "address": "https://77.88.8.8/dns-query",
+            "strategy": "ipv4_only",
+            "detour": "direct"
+        }
+    ],
+    "rules": [
+        {
+            "domain_suffix": [
+                ".ru",
+                ".xn--p1ai",
+                ".su"
+            ],
+            "rule_set": [
+                "geosite-category-ru",
+                "geosite-category-gov-ru",
+                "geosite-yandex",
+                "geosite-mailru",
+                "geosite-vk"
+            ],
+            "server": "local"
+        }
+    ],
+    "final": "remote"
 }
 ```
 
